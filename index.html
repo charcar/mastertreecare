@@ -19,7 +19,7 @@
 
     <div class="jumboAndNav" id="jumboAndNav">
       <header>
-        <div class="jumbotron vertical-center">
+        <div class="jumbotron vertical-center" id="top">
           <div class="container">
             <h1>Master Tree Care</h1>
             <h3 class="byline">Living Sculpture from a Master's Hand</h3>
@@ -30,15 +30,15 @@
       </header>
 
       <div class="scrollspy" id="nav">
-        <nav class="navbar navbar-custom hidden-xs hidden-sm" data-spy="affix">
+        <nav class="navbar navbar-custom hidden-xs hidden-sm">
             <div class="collapse navbar-collapse">
               <ul class="nav navbar-nav">
 
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="#" class="logo"><img src="img/logosmall.png"></a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Reviews</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#reviews">Reviews</a></li>
               </ul>
             </div>
         </nav>
@@ -148,7 +148,7 @@
       <br>
       <hr>
       <br>
-      <div class="content-container">
+      <div class="content-container" id="about">
         <div class="row content-row">
           <div class="col-sm-4 col-md-8 col-lg-7 content-image">
             <img class="img-responsive" src="img/aboutus2.jpg" alt="Owner and operator Tom scaling a massive fir"/>
@@ -169,12 +169,13 @@
 
     <!-- Contact (put this first) -->
     <div class="container">
-      <div class="content-container">
+      <div class="content-container" id="contact">
         <div class="row content-row">
           <div class="col-sm-8 col-md-6 col-lg-5 content-text">
             <h2>Let's talk!</h2>
             <br>
             <h3>Give us a call at 503-254-2930</h3>
+            <h4>Tom's CCB#: 119357</h4>
             <br>
             <p> Leave a message and Tom will get back to you within 24-48 hours. We can also be reached at mastertreecare@gmail.com, but to ensure that your request is replied to as swiftly as possible, we'd prefer a call. Our quotes/bids take place on Mondays. If that isn't possible due to your circumstances we can decide on a different day. We'd love to hear from you!
           </div>
@@ -188,7 +189,7 @@
 
       <!-- Services -->
       <div class="container">
-        <div class="content-container">
+        <div class="content-container" id="services">
           <div class="row content-row">
             <div class="col-sm-6 col-md-8 col-lg-8 content-image">
               <img class="img-responsive" src="img/combinedservices.jpg" alt="Tom grinding a stump and a juvenile japanese maple cabled to promote desired growth"/>
@@ -221,7 +222,7 @@
       <!-- Reviews -->
 
         <div class="container">
-          <div class="content-container">
+          <div class="content-container" id="reviews">
             <div class="row content-row">
               <div class="container review-container">
                 <h2>We're Angie's Certified and received a Super Service award in 2015.</h2>
@@ -278,6 +279,8 @@
                   <div class="col-sm-11 col-md-11 col-lg-11">
 
                     <p>Cut down a large maple tree from our backyard whose roots had lifted our driveway and walkway. It was right next to a shed, with limbs on the shed, on the house, and well over the fence to the neighbors yard. It went smoothly, they worked steadily all day... They stacked the larger limbs for us, and the very large limbs and trunk were cut to 16 inch lengths, which they stacked for us to split later, as requested... The yard, shed roof, deck, driveway and walks were swept and blown clean. Great job, no problems, and no damage. And the neighbors were impressed and asked for the company name.</p>
+                    <br>
+                    <br>
                   </div>
                 </div>
               </div>
@@ -285,6 +288,14 @@
           </div>
         </div>
       </div>
+
+      <footer class="footer">
+        <div class="container">
+          <p>created by <a href="https://github.com/charcar" target="_blank">charles carter</a>
+        </div>
+      </footer>
+
+
 
       <script src="js/jquery-3.1.0.min.js"></script>
       <script type="text/javascript" src="js/bootstrap.min.js"></script>
