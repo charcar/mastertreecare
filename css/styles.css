@@ -1,13 +1,3 @@
-/*Colors
-PrimaryGreenDark= 41592C
-PrimaryGreenLight= 41592C
-
-ComplimentaryRed= FF3153
-ComplimentaryBrownLight=996A5B
-ComplimentaryOrangeLight=CC4013
-*/
-
-
 /* tablets */
 @media screen and (max-width:1199px){
   .jumboAndNav, #summary {
@@ -32,10 +22,16 @@ ComplimentaryOrangeLight=CC4013
     }
   }
 
- /*move summaries closer to jumbotron */
+/* centers text of summary in window*/
+@media screen and (max-width:768px) {
+  body > div.container {
+    text-align: center;
+  }
+}
+/* fix for display on mobile of top margin of heart glyphicon */
 @media screen and (max-width:500px) {
-  body > div.jumboAndNav {
-    margin-bottom: -80px;
+  #summary > div.col-sm-4.col-sm-offset-2 > div > div.col-md-3 {
+    margin-top: -25px;
     }
   }
 
@@ -47,23 +43,9 @@ ComplimentaryOrangeLight=CC4013
   }
 }
 
-/*html * {
-  font-family: Oswald; !important;
-}*/
-
-/*h1 {
-  font-family: Oswald;
-}*/
-
-
 /* jumbotron styling */
 .jumbotron {
-  background-image:
-  linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
-      ),
-      url(../img/backgroundtall.jpg);
+  background-image:url(../img/backgroundtall6.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
@@ -76,6 +58,7 @@ ComplimentaryOrangeLight=CC4013
 
 .jumbotron > .container h1 {
   text-transform: uppercase;
+  color: white !important;
 }
 
 .jumbotron > .phoneNumber {
@@ -90,8 +73,6 @@ ComplimentaryOrangeLight=CC4013
 }
 
 /* summation styling */
-
-
 div.col-md-3 > .glyphicon {
   font-size: 35px;
   width: 1em;
@@ -147,7 +128,6 @@ ul.nav {
 }
 .nav a {
     text-align:center;
-    /*padding:12px 0 13px 0;*/
     margin:0;
     margin-top: 5px;
     border-left: 1px solid #fff;
@@ -229,6 +209,4 @@ footer {
 footer > .container > p {
   padding-top: 15px;
   padding-bottom: 10px;
-  /*margin-top: 20px;
-  margin-bottom: 20px;*/
 }
